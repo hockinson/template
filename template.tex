@@ -1,0 +1,72 @@
+% Elements in brackets ("[]") are placeholder
+% values, replace them with the actual
+% values. Full block placeholders will be 
+% marked with a "TODO."
+
+% "FIXME"s are for us, the creators of the
+% template to fix and add. You can ignore
+% them.
+
+
+\documentclass[12pt, letterpaper]{article}
+\title{[COMP. NAME] [PROJECT NAME]}
+\author{The Hockinson Math Team\thanks{Funded by Hockinson High School}}
+\date{2023-02-21}
+
+\setcounter{secnumdepth}{0}                % Set section depth to 0, fixes ToC
+\AddToHook{cmd/section/before}{\clearpage} % Add a new page on a new section
+
+% Packages
+\usepackage[dvips]{graphics}
+\usepackage[dvips]{color}
+
+% TODO: Remove this, it is for generating the example text.
+\usepackage{blindtext}
+
+\begin{document}
+% Create the title.
+\pagenumbering{gobble}  % Turn page numbers off
+\maketitle              % Create the title using the document data
+\tableofcontents        % Add a table of contents
+\newpage                % Go to a new page
+\pagenumbering{arabic}  % Turn page numbers back on
+
+\section{Introduction}
+
+\subsection{Abstract}
+% TODO: Write an explanation of the project prompt.
+\paragraph{\blindtext}
+
+\subsection{Importance}
+% TODO: Write about why it is important to investigate this topic.
+\paragraph{\blindtext}
+\paragraph{\blindtext}
+
+\subsection{Methods \& Approach}
+\paragraph{\blindtext}
+
+\section{Investigation}
+
+\subsection{Data Collected}
+\paragraph{\blindtext}
+\paragraph{\blindtext}
+\paragraph{\blindtext}
+\paragraph{\blindtext}
+
+\subsection{Observations}
+\paragraph{\blindtext}
+\paragraph{\blindtext}
+
+\section{Appendix}
+
+\subsection{[TOOL USED] Example}
+\paragraph{\blindtext}
+\paragraph{\blindtext}
+\paragraph{\blindtext}
+
+\subsection{Alternative Approaches and Tools}
+\paragraph{\blindtext}
+
+% FIXME: Add bibliography.
+
+\end{document}
