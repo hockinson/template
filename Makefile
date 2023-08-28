@@ -1,7 +1,7 @@
 # Okay, have a Makefile for a publication is actually pretty funny.
 default: help
 
-build: # Builds the document into a PDF file.
+build: clean # Builds the document into a PDF file.
 	mkdir ./build/
 	tectonic ./template.tex -o ./build/
 
